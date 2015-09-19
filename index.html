@@ -99,26 +99,62 @@
           <li><a href="#" data-filter=".longboard">longboards</a></li>
         </ul>
         <ul class="items col4">
-          <li class="item shortboard"> <a href="#" data-contenturl="boards/01/avila-58-shortboard.html" data-callback="callPortfolioScripts();" data-contentcontainer=".pcw"><img src="style/images/01/01_availa_1.jpg" alt="" />
-            <div>
-              <h5>Avila<span>5'8"</span></h5>
-            </div>
-            </a> </li>
-          <li class="item specialty"> <a href="#" data-contenturl="boards/01/channel-islands-sperm-whale.html" data-callback="callPortfolioScripts();" data-contentcontainer=".pcw"><img src="style/images/01/01_sperm_whale_1.jpg" alt="" />
-            <div>
-              <h5>Channel Islands <span>5'3" Sperm Whale</span></h5>
-            </div>
-            </a> </li>
-          <li class="item fun"> <a href="#"  data-contenturl="boards/01/beater-original-54.html" data-callback="callPortfolioScripts();" data-contentcontainer=".pcw"><img src="style/images/01/01_beater_1.jpg" alt="" />
-            <div>
-              <h5>Catch Surf <span>Beater Original 54</span></h5>
-            </div>
-            </a> </li>
-          <li class="item shortboard"> <a href="#"  data-contenturl="boards/01/channel-islands-biscuit.html" data-callback="callPortfolioScripts();" data-contentcontainer=".pcw"><img src="style/images/01/01_biscuit_1.jpg" alt="" />
-            <div>
-              <h5>Channel Islands <span>5'4" Biscuit</span></h5>
-            </div>
-            </a> </li>
+          <li class="item shortboard">
+            <a href="#" data-contenturl="boards/01/avila-58-shortboard.html" data-callback="callPortfolioScripts();" data-contentcontainer=".pcw">
+              <img class="lazy" data-original="style/images/01/01_availa_1_thumb.jpg" width="259" height="345" />
+              <div>
+                <h5>Avila 5'8" Shortboard<span></span></h5>
+              </div>
+            </a>
+          </li>
+          <li class="item specialty">
+            <a href="#" data-contenturl="boards/01/channel-islands-sperm-whale.html" data-callback="callPortfolioScripts();" data-contentcontainer=".pcw">
+              <img class="lazy" data-original="style/images/01/01_sperm_whale_1_thumb.jpg" width="259" height="345" />
+              <div>
+                <h5>Channel Islands 5'3" Sperm Whale<span></span></h5>
+              </div>
+            </a>
+          </li>
+          <li class="item fun">
+            <a href="#"  data-contenturl="boards/01/beater-original-54.html" data-callback="callPortfolioScripts();" data-contentcontainer=".pcw">
+              <img class="lazy" data-original="style/images/01/01_beater_1_thumb.jpg" width="259" height="345" />
+              <div>
+                <h5>Catch Surf Beater Original 54<span></span></h5>
+              </div>
+            </a>
+          </li>
+          <li class="item shortboard">
+            <a href="#"  data-contenturl="boards/01/channel-islands-biscuit.html" data-callback="callPortfolioScripts();" data-contentcontainer=".pcw">
+              <img class="lazy" data-original="style/images/01/01_biscuit_1_thumb.jpg" width="259" height="345" />
+              <div>
+                <h5>Channel Islands 5'4" Biscuit<span></span></h5>
+              </div>
+            </a>
+          </li>
+          <li class="item shortboard">
+            <a href="#"  data-contenturl="boards/01/super-brand-the-unit.html" data-callback="callPortfolioScripts();" data-contentcontainer=".pcw">
+              <img class="lazy" data-original="style/images/01/01_unit_1_thumb.jpg" width="259" height="345" />
+              <div>
+                <h5>Super Brand 5'7" The Unit<span></span></h5>
+              </div>
+            </a>
+          </li>
+          <li class="item fun shortboard">
+            <a href="#" data-contenturl="boards/01/super-brand-the-fling.html" data-callback="callPortfolioScripts();" data-contentcontainer=".pcw">
+              <img class="lazy" data-original="style/images/01/01_fling_1_thumb.jpg" width="259" height="345" />
+              <div>
+                <h5>Super Brand 5'4" The Fling<span></span></h5>
+              </div>
+            </a>
+          </li>
+          <li class="item longboard">
+            <a href="#" data-contenturl="boards/01/k5-funboard.html" data-callback="callPortfolioScripts();" data-contentcontainer=".pcw">
+              <img class="lazy" data-original="style/images/01/01_funboard_1_thumb.jpg" width="259" height="345" />
+              <div>
+                <h5>K5 Funboard<span></span></h5>
+              </div>
+            </a>
+          </li>
         </ul>
       </div>
       <!-- End Portfolio -->
@@ -158,7 +194,15 @@
 
 </div>
 <!-- End Body Wrapper -->
+<script type="text/javascript" src="style/js/jquery.lazyload.min.js"></script>
 <script type="text/javascript" src="style/js/scripts.js"></script>
+<script type="text/javascript" charset="utf-8">
+$(function() {
+   $("img.lazy").lazyload({
+       effect : "fadeIn"
+   });
+});
+</script>
 </body>
 
 </html>
