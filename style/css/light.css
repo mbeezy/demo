@@ -7,7 +7,6 @@ body {
 }
 h1,
 h2,
-h3,
 h4,
 h5,
 h6 {
@@ -16,6 +15,9 @@ h6 {
 .colored {
     color: #0259a3;
     margin-bottom: 25px;
+}
+h3 {
+	color:#0259a3; 
 }
 h5 span {
     color: #7c7c7c
@@ -639,4 +641,7 @@ ul.testimonials li.even .quote:after {
 	background-position: right bottom;
 	background-image: url("../images/updown-menu-cropped.png");
 	background-color: no;
+}
+.why-ds {
+	margin:25px;
 }
