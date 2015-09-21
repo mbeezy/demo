@@ -192,11 +192,21 @@
 <script type="text/javascript" src="style/js/jquery.lazyload.min.js"></script>
 <script type="text/javascript" src="style/js/scripts.js"></script>
 <script type="text/javascript" charset="utf-8">
+
 $(function() {
    $("img.lazy").lazyload({
        effect : "fadeIn"
    });
 });
+
+$('img.lazy').each(function() {
+  var img = $(this);
+  var width = img.width();
+  var ratio = 0.75;
+  var height = width / ratio;
+  $(this).css('height', height+'px');
+});
+
 </script>
 </body>
 
